@@ -1,0 +1,2 @@
+# Contributing to GAMA website
+

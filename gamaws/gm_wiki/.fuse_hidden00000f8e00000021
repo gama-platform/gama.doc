@@ -1,0 +1,10 @@
+##git clone --mirror https://github.com/mazarsju/gama_doc_17.wiki.git
+cd ../gama_doc_17.wiki.git
+git fetch
+GIT_WORK_TREE=../gm_wiki/ git checkout -f master
+git rev-parse --short master
+
+cd ../gm_wiki
+sudo rm -r Tutorials/ThematicTutorials
+mv Tutorials/Tutorials Tutorials/ThematicTutorials
+mv Tutorials/Tutorials.md Tutorials/ThematicTutorials.md

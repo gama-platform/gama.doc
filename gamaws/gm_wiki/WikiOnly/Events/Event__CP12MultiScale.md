@@ -1,0 +1,1 @@
+# Improvement of the Multi-scale framework ## {#improvement-of-the-multi-scale-framework}

@@ -1,0 +1,3 @@
+[submodule "gamawiki"]
+	path = gamawiki
+	url = git@github.com:gama-platform/gama.wiki.git

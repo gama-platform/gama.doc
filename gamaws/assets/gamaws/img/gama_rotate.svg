@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg5863" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="18.735mm" width="17.734mm" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 62.837499 66.383867">
+ <defs id="defs5865">
+  <clipPath id="clipPath269" clipPathUnits="userSpaceOnUse">
+   <path id="path271" clip-rule="evenodd" d="m-0.000023168 1280h960v-1280h-960"/>
+  </clipPath>
+  <clipPath id="clipPath279" clipPathUnits="userSpaceOnUse">
+   <path id="path281" clip-rule="evenodd" d="m0.000011295 1280h960v-1280h-960"/>
+  </clipPath>
+ </defs>
+ <metadata id="metadata5868">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer1" transform="translate(-404.46 -532.78)">
+  <g id="g6467" transform="matrix(1 0 0 .99239 0 4.0536)">
+   <g id="g265" transform="matrix(1.25 0 0 -1.25 -602.95 716.86)">
+    <g id="g267" clip-path="url(#clipPath269)">
+     <path id="path273" d="m836.7 140.98c12.28-3.95 18.94-17.39 14.88-30.02-4.06-12.627-17.31-19.659-29.59-15.707-9.33 3.002-15.74 11.667-16.06 21.707l2.67 0.13c0.34-11.74 9.9-20.801 21.36-20.237 11.45 0.563 20.47 10.537 20.13 22.277-0.26 8.93-5.94 16.64-14.21 19.31l0.82 2.54z" fill-rule="evenodd" fill="#c55a11"/>
+    </g>
+   </g>
+   <g id="g275" transform="matrix(1.25 0 0 -1.25 -602.95 716.86)">
+    <g id="g277" clip-path="url(#clipPath279)">
+     <path id="path283" d="m855.57 147.26 0.63-2.48-19.65-5 5.01-19.74-2.56-0.65-5.65 22.22 22.22 5.65z" fill-rule="evenodd" fill="#c55a11"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>
