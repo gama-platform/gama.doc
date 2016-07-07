@@ -23,7 +23,6 @@ import java.util.regex.Pattern;
 
 public class CheckURL {
 
-	public static final String localPathFileName = "localPath.txt";
 	public static final String githubContentUrl = "";
 	public static String pathToContent;
 	public static Map<String, String> fileMap = new HashMap<String, String>();
@@ -252,41 +251,17 @@ public class CheckURL {
 	}
 
 	private static boolean loadPathToContent() throws FileNotFoundException {
-		boolean result = false;
-		Path relativePath = Paths.get(localPathFileName);
-		String relativePathString = relativePath.toAbsolutePath().toString();
-		File f = new File(relativePathString);
-		if (!f.exists()) {
-			f.getParentFile().mkdirs();
-			try {
-				f.createNewFile();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-			System.out.println("The file " + f.getAbsolutePath() + " has been created.");
-		}
-
-		Scanner scanner = new Scanner(f);
-		String content = "";
-		BufferedReader br = new BufferedReader(new FileReader(f.getAbsolutePath()));
-		try {
-			if (br.readLine() != null) {
-				result = true;
-				content = scanner.useDelimiter("\\Z").next();
-			}
-			br.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-
-		String outputMsg = (result) ? "The path for your content directory is : " + content
-				: "The file " + f.getAbsolutePath()
-						+ " is empty.\nPlease set the path to the content and run again the application.";
-		pathToContent = content;
-
+		
+		String currentFilePath = CheckURL.class.getProtectionDomain().getCodeSource().getLocation().getPath();
+		String pathToTarget = (new File(currentFilePath)).getParent();
+		String pathToGamaWSBuild = (new File(pathToTarget)).getParent();
+		String pathToGamaDoc = (new File(pathToGamaWSBuild)).getParent();
+		pathToContent = pathToGamaDoc + File.separatorChar + "gamaws" + File.separatorChar + "gm_wiki";
+		
+		String outputMsg = "The path for your content directory is : " + pathToContent;		
 		System.out.println(outputMsg);
-		scanner.close();
-		return result;
+
+		return true;
 	}
 
 	private static boolean checkIfFolderExists(String folderPath) {
