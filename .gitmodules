@@ -1,3 +1,9 @@
 [submodule "gamawiki"]
 	path = gamawiki
 	url = git@github.com:gama-platform/gama.wiki.git
+[submodule "gamaws"]
+	path = gamaws
+	url = git@github.com:gama-platform/gama.website
+[submodule "GamaWSBuildDB"]
+	path = GamaWSBuildDB
+	url = git@github.com:gama-platform/gama.websiteGenerator
