@@ -1,1 +1,0 @@
-# Enhancement of the IDE ## {#enhancement-of-the-ide}

@@ -1,5 +1,0 @@
-### On MacOS X (Lion, Mountain Lion, Mavericks) ## {#on-macos-x-lion-mountain-lion-mavericks}
-The latest version of GAMA requires a JVM (or JDK) compatible with Java 1.6 to run. There are two of them available for MacOS X. JDK 1.7 is distributed by Oracle, while JDK 1.6 is distributed by Apple.
-Because of this bug in SWT (https://bugs.eclipse.org/bugs/show_bug.cgi?id=374199), GAMA will not run correctly under JDK 1.7 (all the displays will appear empty).
-
-If JDK 1.7 is already installed, it is then necessary to also install the JDK 1.6 distributed by Apple in order to run GAMA. The latest version, « Java for OS X 2014-001 », can be obtained here : http://support.apple.com/kb/DL1572. Alternatively, you might want to go to https://developer.apple.com/downloads and, after a free registration step if you're not an Apple Developer, get the complete JDK from the list of downloads.

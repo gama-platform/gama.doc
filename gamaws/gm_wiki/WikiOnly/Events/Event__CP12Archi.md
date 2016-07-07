@@ -1,1 +1,0 @@
-# GAMA Architecture ## {#gama-architecture}
