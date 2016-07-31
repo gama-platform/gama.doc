@@ -84,10 +84,12 @@ public class TreeMenuToGamaWSDB {
 				String title;
 				if(filename == null){
 					title = node.getText();
+					System.out.println("title = node.getText() " + title);
 				}else{
 					try {
 						System.out.println(CheckURL.pathToContent + File.separator + filename);
 						title = CheckURL.getTitle(new File(CheckURL.pathToContent + File.separator + filename));
+						System.out.println("title = CheckURL.getTitle() " + title);
 					} catch (IOException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
@@ -126,7 +128,7 @@ public class TreeMenuToGamaWSDB {
 	public static void deleteAllMenu(int level) {
 		DBConnection dbc = new DBConnection();
 		dbc.connect();
-		if(dbc.prepareStatement("delete from gm_menu where type= "+level)){
+		if(dbc.prepareStatement("delete from gm_menu where type= ? ; ")){
 			try {
 				dbc.getPreparedStatement().setInt(1, level);
 				dbc.getPreparedStatement().executeUpdate();

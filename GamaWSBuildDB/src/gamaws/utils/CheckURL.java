@@ -409,6 +409,8 @@ public class CheckURL {
 			}
 		}
 		br.close();
+		System.out.println("title : " + title);
+		title = title.split("#")[0];
 		return title;
 	}
 

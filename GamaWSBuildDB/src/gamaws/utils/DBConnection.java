@@ -30,7 +30,7 @@ public class DBConnection {
 	private static String DB_USER = null;
 	private static String USR_DELIMITER = "user:";
 	private static String DB_PASSWORD = null;
-	private static String PSW_DELIMITER = "psw:";
+	private static String PSW_DELIMITER = "pwd:";
 	
 	private static Connection getDBConnection() {
 		Connection dbConnection = null;
@@ -119,7 +119,7 @@ public class DBConnection {
 						String newLine = line.split(DB_DELIMITER)[1];
 						Matcher m = r.matcher(newLine);
 						if (m.find( )) {
-							DB_CONNECTION = m.group(0);
+							DB_CONNECTION = DB_CONNECTION.replace("/gamaws?", "/" + m.group(0) + "?");
 						}
 					}
 				}

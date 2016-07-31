@@ -1,0 +1,1 @@
+concept, type, statement, species, architecture, operator, skill, constant, action, attribute, facet
